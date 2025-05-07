@@ -18,7 +18,9 @@ int main(){
     int populaca = 400000;
     int Turism = 10;
 
+
     printf("%s, mostrem suas cartas!\n", nome);
+    printf("\nANA\n");
     printf("\nCarta: %s\n", Carta);
     printf("Estado: %s\n", Estado);
     printf("Cidade: %s\n", Cidade);
