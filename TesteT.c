@@ -38,6 +38,7 @@ int main(){
     printf("População: %d\n", populaca);
     printf("Turismo: %d\n", Turism);
         
+    return 0;
 
 
 
