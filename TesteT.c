@@ -29,6 +29,7 @@ int main(){
     printf("População: %d\n", populacao);
     printf("Turismo: %d\n", Turismo);
 
+    printf("\nCLARA\n");
     printf("\nCarta: %s\n", Cart);
     printf("Estado: %s\n", Estad);
     printf("Cidade: %s\n", Cidad);
