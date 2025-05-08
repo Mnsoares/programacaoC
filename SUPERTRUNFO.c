@@ -44,6 +44,6 @@ int main(){
     printf("Turismo: %d\n", Turism);
         
 
-
+    return 0;
 
 }
