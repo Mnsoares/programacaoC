@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+    //dados das cartas variaveis simples char, float e int.
     char nome [20] = "JOGADORES";
     char Carta [20] = "AA";
     char Estado [20] = "Sergipe";
@@ -9,7 +10,7 @@ int main(){
     float Pib = 100.000; 
     int populacao = 100000;
     int Turismo = 8;
-
+//dados da segunda carta, alterando o nome de cada item 
     char Cart [20] = "BA";
     char Estad [20] = "Bahia";
     char Cidad [20] = "Salvador";
@@ -18,7 +19,8 @@ int main(){
     int populaca = 400000;
     int Turism = 10;
 
-
+//Cartas da jogadarora coletando os dados das linhas 6 a 12
+//printf coleta valores correspodentes a primeira carta
     printf("%s, mostrem suas cartas!\n", nome);
     printf("\nANA\n");
     printf("\nCarta: %s\n", Carta);
@@ -29,6 +31,9 @@ int main(){
     printf("População: %d\n", populacao);
     printf("Turismo: %d\n", Turismo);
 
+
+    //Cartas da jogadarora coletando os dados das linhas 14 a 20
+//printf coleta valores correspodentes a segunda carta
     printf("\nCLARA\n");
     printf("\nCarta: %s\n", Cart);
     printf("Estado: %s\n", Estad);
