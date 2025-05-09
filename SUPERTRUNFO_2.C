@@ -34,7 +34,7 @@ int main(){
 
     float PibPerCapit = pib/ populaca;  //PIB per Cap real 21 706,06
 
-//Cartas da jogadarora coletando os dados das linhas 6 a 12
+//Cartas da jogadarora coletando os dados das linhas 6 a 11
 //printf coleta valores correspodentes a primeira carta
     printf("%s, mostrem suas cartas!\n", nome);
     printf("\nANA\n");
@@ -46,11 +46,11 @@ int main(){
     printf("População: %d\n", populacao);
     printf("Turismo: %d\n", Turismo);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE DENSIDADE;
-    printf("Densidade Populacional: %f hab/km²\n", &Densidade);
+    printf("Densidade Populacional: %f hab/km²\n", Densidade);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE PIB PER CAPITA;
-    printf("PIB Per Capita: %f reais\n", &PibPerCapita);
+    printf("PIB Per Capita: %f reais\n", PibPerCapita);
 
-//Cartas da jogadarora coletando os dados das linhas 14 a 20
+//Cartas da jogadarora coletando os dados das linhas 21 a 27
 //printf coleta valores correspodentes a segunda carta
     printf("\nCLARA\n");
     printf("\nCarta: %s\n", Cart);
@@ -61,9 +61,9 @@ int main(){
     printf("População: %d\n", populaca);
     printf("Turismo: %d\n", Turism);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE DENSIDADE;
-    printf("Densidade Populacional: %f hab/km²\n", &Densidad);
+    printf("Densidade Populacional: %f hab/km²\n", Densidad);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE PIB PER CAPITA;
-    printf("PIB Per Capita: %f reais\n", &PibPerCapit);
+    printf("PIB Per Capita: %f reais\n", PibPerCapit);
         
     return 0;
 
