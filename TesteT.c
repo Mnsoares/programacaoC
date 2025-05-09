@@ -19,8 +19,8 @@ int main(){
     float Pi = 62954487.49;
     int populaca = 2417678;
     int Turism = 10;
-    float Densidad = 8102.47;  //Densidade real 3 486,5
-    float PibPerCapit = 56724.32;  //PIB per Cap real 21 706,06
+    float Densidad = populaca / Are;  //Densidade real 3 486,5
+    float PibPerCapit;  //PIB per Cap real 21 706,06
 
 
     printf("%s, mostrem suas cartas!\n", nome);
@@ -42,6 +42,7 @@ int main(){
     printf("PIB: %f\n", Pi);
     printf("População: %d\n", populaca);
     printf("Turismo: %d\n", Turism);
+    printf("Densidade Populacional: %.2f\n", Densidad);
         
     return 0;
 
