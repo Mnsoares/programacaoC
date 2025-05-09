@@ -5,22 +5,22 @@ int main(){
     char Carta [20] = "A1";
     char Estado [20] = "Sergipe";
     char Cidade [20] = "Aracaju";
-    float Area = 50.000;
-    float Pib = 100.000; 
-    int populacao = 100000;
+    float Area = 181.857;
+    float Pib = 16447105.18; 
+    int populacao = 602.757;
     int Turismo = 8;
-    float Densidade =  5622.24;
-    float PibPerCapita = 44532.91;
+    float Densidade =  5622.24;  //Densidade real 3 314,5
+    float PibPerCapita = 44532.91; //PIB per Cap real 24 735,91
 
     char Cart [20] = "B1";
     char Estad [20] = "Bahia";
     char Cidad [20] = "Salvador";
-    float Are = 200.000;
-    float Pi = 300.000;
-    int populaca = 400000;
+    float Are = 693.442;
+    float Pi = 62954487.49;
+    int populaca = 2417678;
     int Turism = 10;
-    float Densidad = 8102.47;
-    float PibPerCapit = 56724.32;
+    float Densidad = 8102.47;  //Densidade real 3 486,5
+    float PibPerCapit = 56724.32;  //PIB per Cap real 21 706,06
 
 
     printf("%s, mostrem suas cartas!\n", nome);
