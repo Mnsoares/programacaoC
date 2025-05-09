@@ -12,11 +12,11 @@ int main(){
 
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
 
-    float Densidade = populacao / Area;  //Densidade real 3 314,5
+    float Densidade = populacao / Area;  
 
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO 
     
-    float PibPerCapita = Pib / populacao; //PIB per Cap real 24 735,91
+    float PibPerCapita = Pib / populacao; 
 
     char Cart [20] = "B1";
     char Estad [20] = "Bahia";
@@ -28,11 +28,11 @@ int main(){
 
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
 
-    float Densidad = populaca / Are;  //Densidade real 3 486,5
+    float Densidad = populaca / Are;  
 
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO 
 
-    float PibPerCapit = pib/ populaca;  //PIB per Cap real 21 706,06
+    float PibPerCapit = pib/ populaca;  
 
 //Cartas da jogadarora coletando os dados das linhas 6 a 11
 //printf coleta valores correspodentes a primeira carta
