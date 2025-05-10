@@ -51,8 +51,40 @@ else
 
 }
 
+//CODIGO PARA VERIFICAR A NOTA 
 
 
+int nota = 85;
+
+if (nota >= 60)
+{
+
+    printf("Parabéns, Você passou! \n"); //Verdadeiro
+
+}
+else
+{
+
+    printf("Infelizmente, Você não passou! \n"); //Falso
+
+}
+
+
+//CODIGO PARA VERIFICAR SE É MAIOR DE IDADE
+
+int idade = 17;
+
+if (idade >=18)
+{
+    printf("Você é maior de idade! \n");
+
+}
+else
+{
+
+    printf("Você é menor de idade! \n");
+
+}
 
 
 
