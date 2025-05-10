@@ -75,6 +75,16 @@ int main(){
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO; 
     printf("Super Poder: %.2f Venceu:%d\n", SuperPode, SuperPode > SuperPoder);
 
+    if (Pib >= pib)
+    {
+        printf("\nCarta A1 Ganhou da Carta B1! ANA Venceu!!!\n");
+    }
+    else
+    {
+        printf("\nCarta B1 Ganhou da Carta A1! CLARA Venceu!!!\n");
+    }
+    
+
         
     return 0;
 
