@@ -33,4 +33,14 @@ int main () {
     else {
       printf("A variavel é diferente de ZERO!\n");
     }    
+
+    int X = -10;
+
+    if (!(X > 0))
+    {
+      printf("A Variavel é Negativa!\n");
+    }
+    else {
+      printf("A Variavel é Positiva!\n");
+    }
 }
