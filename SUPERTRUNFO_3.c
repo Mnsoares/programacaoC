@@ -17,7 +17,8 @@ int main(){
     float PibPerCapita = Pib / populacao; 
 //SUPER PODER CALCULO DAS AREA
     float SuperPoder = Area + Pib + populacao + PibPerCapita + Turismo - Densidade;
-    
+//COMPARAÇÃO DAS CARTAS, VENCEU RESULTADO = 1, PERDEU RESULTADO = 0
+        
 
     char Cart [20] = "B1";
     char Estad [20] = "Bahia";
@@ -42,19 +43,19 @@ int main(){
     printf("\nCarta: %s\n", Carta);
     printf("Estado: %s\n", Estado);
     printf("Cidade: %s\n", Cidade);
-    printf("Area: %f km²\n", Area);
-    printf("PIB: %f reais\n", Pib);
-    printf("População: %d\n", populacao);
-    printf("Turismo: %d\n", Turismo);
+    printf("Area: %f km² Venceu:%d\n", Area, Area > Are);
+    printf("PIB: %f reais Venceu:%d\n", Pib, Pib > Pib);
+    printf("População: %d Venceu:%d\n", populacao, populacao > populaca);
+    printf("Turismo: %d Venceu:%d\n", Turismo, Turismo > Turism);
     
     
 
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE DENSIDADE;
-    printf("Densidade Populacional: %f hab/km²\n", Densidade);
+    printf("Densidade Populacional: %f hab/km² Venceu:%d\n", Densidade, Densidade > Densidad);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE PIB PER CAPITA;
-    printf("PIB Per Capita: %f reais\n", PibPerCapita);
+    printf("PIB Per Capita: %f reais Venceu:%d\n", PibPerCapita, PibPerCapita > PibPerCapit);
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO;    
-    printf("Super Poder: %.2f\n", SuperPoder);
+    printf("Super Poder: %.2f Venceu:%d\n", SuperPoder, SuperPoder > SuperPode);
 
 //Cartas da jogadarora coletando os dados das linhas 21 a 27
 //printf coleta valores correspodentes a segunda carta
@@ -63,16 +64,16 @@ int main(){
     printf("\nCarta: %s\n", Cart);
     printf("Estado: %s\n", Estad);
     printf("Cidade: %s\n", Cidad);
-    printf("Area: %f km²\n", Are);
-    printf("PIB: %f reais\n", pib);
-    printf("População: %d\n", populaca);
-    printf("Turismo: %d\n", Turism);
+    printf("Area: %f km² Venceu:%d\n", Are, Are > Area);
+    printf("PIB: %f reais Venceu:%d\n", pib, pib > Pib);
+    printf("População: %d Venceu:%d\n", populaca, populaca > populacao);
+    printf("Turismo: %d Venceu:%d\n", Turism, Turism > Turismo);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE DENSIDADE;
-    printf("Densidade Populacional: %f hab/km²\n", Densidad);
+    printf("Densidade Populacional: %f hab/km² Venceu:%d\n", Densidad, Densidad > Densidade);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE PIB PER CAPITA;
-    printf("PIB Per Capita: %f reais\n", PibPerCapit);
+    printf("PIB Per Capita: %f reais Venceu:%d\n", PibPerCapit, PibPerCapit > PibPerCapita);
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO; 
-    printf("Super Poder: %.2f\n", SuperPode);
+    printf("Super Poder: %.2f Venceu:%d\n", SuperPode, SuperPode > SuperPoder);
 
         
     return 0;
