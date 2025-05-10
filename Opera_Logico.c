@@ -14,6 +14,12 @@ int main (){
     
         printf("FORA IF\n");
 
+
+
+//IDADE
+
+
+
     int idade = 37;
     
     if (idade >= 18)
@@ -21,6 +27,9 @@ int main (){
         printf("Você é maior de idade!\n");
         printf("Fora IF\n");
     }
+
+
+    //TEMPERATURA
 
     float temperatura = 32.0;
 
@@ -30,6 +39,10 @@ int main (){
        printf("Está calor!\n");
     }
 
+
+    //NOTA
+
+
     int nota = 65;
 
     if (nota >=60)
@@ -37,6 +50,8 @@ int main (){
         printf("Parabéns, você passou!  %d\n", nota);
     }
     
+    //IDADE
+
     int idade1 = 37;
     int idade2 = 30;
 
@@ -44,6 +59,33 @@ int main (){
     {
         printf ("Pessoa1 %d anos, é mais velha que Pessoa2 %d anos! \n", idade1, idade2);
     }
+
+
+    //RESULTADO DO NUMERO
+
+    int numero = 5, resultado;
+
+    resultado = numero % 2;
+    printf("A variavel resultado é: %d \n", resultado);
+
+    if (numero % 2 == 0)
+    {
+    printf("O numero é par \n");
+    
+    
+    }
+
+
+    //ESTOQUE
+
+    int estoque = 4;
+
+    if (estoque < 5)
+    {
+        printf("Estoque baixo! \n");
+    }
+    
+    
     
     
     
