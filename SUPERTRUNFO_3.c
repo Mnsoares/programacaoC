@@ -9,14 +9,15 @@ int main(){
     float Pib = 16447105.18; 
     int populacao = 602757.23;
     int Turismo = 8;
-
+   
+ 
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
-
     float Densidade = populacao / Area;  
-
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO 
-    
     float PibPerCapita = Pib / populacao; 
+//SUPER PODER CALCULO DAS AREA
+    float SuperPoder = Area + Pib + populacao + PibPerCapita + Turismo - Densidade;
+    
 
     char Cart [20] = "B1";
     char Estad [20] = "Bahia";
@@ -27,12 +28,12 @@ int main(){
     int Turism = 10;
 
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
-
     float Densidad = populaca / Are;  
-
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO 
-
     float PibPerCapit = pib/ populaca;  
+//SUPER PODER CALCULO DAS AREA
+    float SuperPode = Are + pib + populaca + PibPerCapit + Turism - Densidad;
+    
 
 //Cartas da jogadarora coletando os dados das linhas 6 a 11
 //printf coleta valores correspodentes a primeira carta
@@ -46,13 +47,14 @@ int main(){
     printf("População: %d\n", populacao);
     printf("Turismo: %d\n", Turismo);
     
+    
 
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE DENSIDADE;
     printf("Densidade Populacional: %f hab/km²\n", Densidade);
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE PIB PER CAPITA;
     printf("PIB Per Capita: %f reais\n", PibPerCapita);
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO;    
-    printf("Super Poder:\n");
+    printf("Super Poder: %.2f\n", SuperPoder);
 
 //Cartas da jogadarora coletando os dados das linhas 21 a 27
 //printf coleta valores correspodentes a segunda carta
@@ -70,7 +72,7 @@ int main(){
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE PIB PER CAPITA;
     printf("PIB Per Capita: %f reais\n", PibPerCapit);
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO; 
-    printf("Super Poder:\n");
+    printf("Super Poder: %.2f\n", SuperPode);
 
         
     return 0;
