@@ -43,4 +43,39 @@ int main () {
     else {
       printf("A Variavel é Positiva!\n");
     }
+
+    //Todos operadores juntos,
+
+    int Y = 5;
+    int E = -10;
+    int S = 1;
+
+    // Y > 0 => verdadeiro
+    // E < 0 => verdadeiro
+    // verdadeiro && verdadeiro => verdadeiro
+    // verdadeiro || C==0 => Verdadeiro || Falso => Verdadeiro
+    //
+
+    if (Y > 0 && E < 0 || S == 0)
+    {
+      printf("A condição é verdadeira!\n");
+    }
+    else
+    {
+      printf("A condição é Falsa!\n");
+    }
+
+    int idade = 17;
+    float altura = 1.75;
+    
+
+    if (idade >= 18 && idade <= 30 && altura > 1.70)
+    {
+      printf("Você está na faixa etaria e tem altura adequada!\n");
+    }
+    else
+    {
+      printf("Você não atende aos criterios!\n");
+    }
+    
 }
