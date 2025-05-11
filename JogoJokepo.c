@@ -14,10 +14,20 @@ int main () {
     printf("Escolha: \n");   
     scanf("%d", &EscolhaJogador);
 
+    EscolhaComputador = rand() % 3 + 1;
+
+switch (EscolhaJogador)
+{
+case 1:
+    printf("Jogador: Pedra - ");
+    break;
+case 2:
+    printf("Jogador: Papel - ");
+    break;
+case 3:
     printf("Jogador: Tesoura - ");
     break;
 default:
-{
     printf("Opção Invalida!\n");   
     break;
 }
@@ -33,23 +43,23 @@ case 3:
     printf("Computador: Tesoura \n");
     break;
 default:
-    printf("Opção Invalida!\n");   
+    printf("Opção Invalida! \n");   
     break;
 }
 
 
 if (EscolhaComputador == EscolhaJogador)
 {
-    printf("\n***  Jogo Empatou!  *** \n");
+    printf("***  Jogo Empatou!  *** \n");
 }else if ((EscolhaJogador == 1) && (EscolhaComputador == 3) || 
            (EscolhaJogador == 2) && (EscolhaComputador == 1)||
             (EscolhaJogador == 3) && (EscolhaComputador == 2))
 {
-  printf("\n***  Você Ganhou!  *** \n");
+  printf("***  Você Ganhou!  *** \n");
 }
 else
 {
-    printf("\n***  Você Perdeu!  *** \n ");
+    printf("***  Você Perdeu!  *** \n ");
 }
 
 
@@ -58,6 +68,8 @@ else
 
 
 return 0;
+
+
 
 
 }
