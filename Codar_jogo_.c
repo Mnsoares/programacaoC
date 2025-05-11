@@ -14,10 +14,20 @@ int main () {
     printf("Escolha: \n");   
     scanf("%d", &EscolhaJogador);
 
+  EscolhaComputador = rand() % 3 + 1;
+
+switch (EscolhaJogador)
+{
+case 1:
+    printf("Jogador: Pedra - ");
+    break;
+case 2:
+    printf("Jogador: Papel - ");
+    break;
+case 3:
     printf("Jogador: Tesoura - ");
     break;
 default:
-{
     printf("Opção Invalida!\n");   
     break;
 }
