@@ -39,10 +39,10 @@ int main() {
                 switch (regras)
                 {
                 case 1:
-                   printf("Regra Do Jogo!");
+                   printf("\nRegra Do Jogo! Clicar na Opção 1, logo após Digitar o número de 0 a 9, onde vai ser apresentador o valor e se voçê acertou ou errou!\n");
                     break;
                 case 2:
-                   printf("Aprenda A Jogar!");
+                   printf("Não é permitido um valor diferente de 0 a 9!");
                     break;
                 default:
                    printf("Opção Invalida!"); 
