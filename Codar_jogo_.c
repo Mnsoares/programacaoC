@@ -50,16 +50,16 @@ default:
 
 if (EscolhaComputador == EscolhaJogador)
 {
-    printf("***Jogo Empatou!*** \n");
+    printf("\n***  Jogo Empatou!  *** \n");
 }else if ((EscolhaJogador == 1) && (EscolhaComputador == 3) || 
            (EscolhaJogador == 2) && (EscolhaComputador == 1)||
             (EscolhaJogador == 3) && (EscolhaComputador == 2))
 {
-  printf("***Você Ganhou!*** \n");
+  printf("\n***  Você Ganhou!  *** \n");
 }
 else
 {
-    printf("***Você Perdeu!*** \n ");
+    printf("\n***  Você Perdeu!  *** \n ");
 }
 
 
