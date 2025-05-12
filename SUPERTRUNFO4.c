@@ -101,8 +101,11 @@ switch (opcao)
     printf("Super Poder: %.2f Venceu:%d\n", SuperPode, SuperPode > SuperPoder);
 
     int Opcao;
-
-    printf("*** Vamos Escolher Uma Das Características De Cada Carta! ***\n");
+    float A1Aracaju;
+    float B1Salvador;
+   
+    
+    printf("\n*** Vamos Escolher Uma Das Características De Cada Carta! ***\n");
     printf("1. Area \n");
     printf("2. Pib \n");
     printf("3. População \n");
@@ -113,8 +116,81 @@ switch (opcao)
     printf("Escolha: \n");  
     scanf("%d", &Opcao);
 
+    switch (A1Aracaju)
+  {
+  case 1:
+    printf("A1 - Aracaju. Area - \n");
+    break;
+  case 2:
+    printf("A1 - Aracaju. Pib - \n ");
+    break;
+    case 3:
+    printf("A1 - Aracaju. População - \n");
+    break;
+    case 4:
+    printf("A1 - Aracaju. Turismo - \n");
+    break;
+    case 5:
+    printf("A1 - Aracaju. Densidade Populacional - \n");
+    break;
+    case 6:
+    printf("A1 - Aracaju. Pib Per Capita - \n");
+    break;
+    case 7:
+    printf("A1 - ARacaju. Super Poder - \n");
+    break;
+  default:
+  printf("Opção Invalida \n"); 
+    break;
+  }
+
+    switch (B1Salvador)
+  {
+  case 1:
+    printf("B1 - Salvador. Area - \n");
+    break;
+  case 2:
+    printf("B1 - Salvador. Pib - \n");
+    break;
+    case 3:
+    printf("B1 - Salvador. População - \n");
+    break;
+    case 4:
+    printf("B1 - Salvador. Turismo - \n");
+    break;
+    case 5:
+    printf("B1 - Salvador. Densidade Populacional - \n");
+    break;
+    case 6:
+    printf("B1 - Salvador. Pib Per Capita - \n");
+    break;
+    case 7:
+    printf("B1 - Salvador. Super Poder - \n");
+    break;
+  default:
+  printf("Opção Invalida \n"); 
+    break;
+  }
+
+if (Opcao == EscolhaJogador)
+{
+    printf("***  Jogo Empatou!  *** \n");
+}else if ((EscolhaJogador == 1) && (EscolhaComputador == 3) || 
+           (EscolhaJogador == 2) && (EscolhaComputador == 1)||
+            (EscolhaJogador == 3) && (EscolhaComputador == 2))
+{
+  printf("***  Você Ganhou!  *** \n");
+}
+else
+{
+    printf("***  Você Perdeu!  *** \n ");
+}
 
 
 
+
+
+
+return 0;
 
 }
