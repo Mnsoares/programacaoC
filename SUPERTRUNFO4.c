@@ -178,6 +178,7 @@ switch (opcao)
     printf("\nA1 - Aracaju. Super Poder -> B1 - Salvador. Super Poder \n");
     if (SuperPoder > SuperPode){
     printf("\n***  Carta A1, Você Ganhou!  *** \n");
+
 }else if (SuperPoder < SuperPode){
  printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
