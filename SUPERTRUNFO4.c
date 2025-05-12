@@ -114,78 +114,82 @@ switch (opcao)
     printf("Escolha: \n");  
     scanf("%d", &Item);
 
-    switch ((Area) || (Pib) || (populacao) || (Turismo) || (Densidade) || (PibPerCapita) || (SuperPoder))
+    switch (Item)
   {
   case 1:
-    printf("A1 - Aracaju. Area - ");
+    printf("A1 - Aracaju. Area -> B1 - Salvador. Area \n");
+    if (Area > Are){
+    printf("***  Carta A1, Você Ganhou!  *** \n");
+}else if (Area < Are){
+ printf("***  Carta B1, Você Ganhou!  *** \n");
+}else{
+    printf("***  Jogo Empatou!  *** \n ");
+}
     break;
   case 2:
-    printf("A1 - Aracaju. Pib - ");
+    printf("A1 - Aracaju. PIB ->  B1 - Salvador. PIB \n");
+    if (Pib > pib){
+    printf("***  Carta A1, Você Ganhou!  *** \n");
+}else if (Pib < pib){
+ printf("***  Carta B1, Você Ganhou!  *** \n");
+}else{
+    printf("***  Jogo Empatou!  *** \n ");
+}
     break;
     case 3:
-    printf("A1 - Aracaju. População - ");
+    printf("A1 - Aracaju. População ->  B1 - Salvador. População \n");
+    if (populacao > populaca){
+    printf("***  Carta A1, Você Ganhou!  *** \n");
+}else if (populacao < populaca){
+ printf("***  Carta B1, Você Ganhou!  *** \n");
+}else{
+    printf("***  Jogo Empatou!  *** \n ");
+}
     break;
     case 4:
-    printf("A1 - Aracaju. Turismo - ");
+    printf("A1 - Aracaju. Turismo ->  B1 - Salvador. Turismo \n");
+    if (Turismo > Turism){
+    printf("***  Carta A1, Você Ganhou!  *** \n");
+}else if (Turismo < Turism){
+ printf("***  Carta B1, Você Ganhou!  *** \n");
+}else{
+    printf("***  Jogo Empatou!  *** \n ");
+}
     break;
     case 5:
-    printf("A1 - Aracaju. Densidade Populacional - ");
+    printf("A1 - Aracaju. Densidade Populacional ->  B1 - Salvador. Densidade Populacional \n");
+    if (Densidade < Densidad){
+    printf("***  Carta A1, Você Ganhou!  *** \n");
+}else if (Densidade > Densidad){
+ printf("***  Carta B1, Você Ganhou!  *** \n");
+}else{
+    printf("***  Jogo Empatou!  *** \n ");
+}
     break;
     case 6:
-    printf("A1 - Aracaju. Pib Per Capita - ");
+    printf("A1 - Aracaju. PIB Per Capita -> B1 - Salvador. PIB Per Capita \n");
+    if (PibPerCapita > PibPerCapit){
+    printf("***  Carta A1, Você Ganhou!  *** \n");
+}else if (PibPerCapita < PibPerCapit){
+ printf("***  Carta B1, Você Ganhou!  *** \n");
+}else{
+    printf("***  Jogo Empatou!  *** \n ");
+}
     break;
     case 7:
-    printf("A1 - ARacaju. Super Poder - ");
+    printf("A1 - Aracaju. Super Poder -> B1 - Salvador. Super Poder \n");
+    if (SuperPoder > SuperPode){
+    printf("***  Carta A1, Você Ganhou!  *** \n");
+}else if (SuperPoder < SuperPode){
+ printf("***  Carta B1, Você Ganhou!  *** \n");
+}else{
+    printf("***  Jogo Empatou!  *** \n ");
+}
     break;
   default:
   printf("Opção Invalida \n"); 
     break;
   }
-
-    switch ((Are) || (pib) || (populaca) || (Turism) || (Densidad) || (PibPerCapit) || (SuperPode))
-  {
-  case 1:
-    printf("B1 - Salvador. Area - \n");
-    break;
-  case 2:
-    printf("B1 - Salvador. Pib - \n");
-    break;
-    case 3:
-    printf("B1 - Salvador. População - \n");
-    break;
-    case 4:
-    printf("B1 - Salvador. Turismo - \n");
-    break;
-    case 5:
-    printf("B1 - Salvador. Densidade Populacional - \n");
-    break;
-    case 6:
-    printf("B1 - Salvador. Pib Per Capita - \n");
-    break;
-    case 7:
-    printf("B1 - Salvador. Super Poder - \n");
-    break;
-  default:
-  printf("Opção Invalida \n"); 
-    break;
-  }
-
-if ((Area == Are) || (Pib == pib) || (populacao == populaca) || (Turismo == Turism) || (Densidade == Densidad) || (PibPerCapita == PibPerCapit) || (SuperPoder == SuperPode))
-{
-    printf("***  Jogo Empatou!  *** \n");
-}else if ((Area >= Are) && (Pib >= pib) || 
-           (populacao >= populaca) && (Turismo >= Turism) ||
-            (Densidade < Densidad) && (PibPerCapita >= PibPerCapit) ||
-              (SuperPoder >= SuperPoder))
-{
-  printf("***  Você Ganhou!  *** \n");
-}
-else
-{
-    printf("***  Você Perdeu!  *** \n ");
-}
-
-
 
 
 
