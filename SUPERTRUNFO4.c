@@ -4,7 +4,7 @@ int main() {
   int opcao;
 //MENU INICIAL DO JOGO, COM AS OPÇÕES DE INICIAR, REGRAS E SAIR;
   printf("*** Super Trunfo ***\n");
-  printf("1. Vamos Iniciar O Jogo? Escolha o numero 1 e clique Enter!\n");
+  printf("1. Vamos Iniciar O Jogo? Escolha O Número 1 e Clique Enter!\n");
   printf("2. Ver Regras:\n");
   printf("3. Sair.\n");
   printf("Escolha uma opção: \n");
