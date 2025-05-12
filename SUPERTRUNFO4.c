@@ -33,7 +33,7 @@ switch (opcao)
     float Area = 181857.67;
     float Pib = 16447105.18; 
     int populacao = 602757.23;
-    int Turismo = 8;
+    int Turismo = 10;
    
  
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
@@ -49,14 +49,14 @@ switch (opcao)
     char Estad [20] = "Bahia";
     char Cidad [20] = "Salvador";
     float Are = 693442.89;
-    float pib = 62954487.49;
+    float pib = 954487.49;
     int populaca = 2417678.02;
     int Turism = 10;
 
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
     float Densidad = populaca / Are;  
 //USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO 
-    float PibPerCapit = pib/ populaca;  
+    double PibPerCapit = pib/ populaca;  
 //SUPER PODER CALCULO DAS AREA
     float SuperPode = Are + pib + populaca + PibPerCapit + Turism - Densidad;
     
@@ -100,10 +100,8 @@ switch (opcao)
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO; 
     printf("Super Poder: %.2f Venceu:%d\n", SuperPode, SuperPode > SuperPoder);
 
-    int Opcao;
-    float A1Aracaju;
-    float B1Salvador;
-   
+    int Item;
+  
     
     printf("\n*** Vamos Escolher Uma Das Características De Cada Carta! ***\n");
     printf("1. Area \n");
@@ -114,37 +112,37 @@ switch (opcao)
     printf("6. Pib Per Capita \n");
     printf("7. Super Poder \n");
     printf("Escolha: \n");  
-    scanf("%d", &Opcao);
+    scanf("%d", &Item);
 
-    switch (A1Aracaju)
+    switch ((Area) || (Pib) || (populacao) || (Turismo) || (Densidade) || (PibPerCapita) || (SuperPoder))
   {
   case 1:
-    printf("A1 - Aracaju. Area - \n");
+    printf("A1 - Aracaju. Area - ");
     break;
   case 2:
-    printf("A1 - Aracaju. Pib - \n ");
+    printf("A1 - Aracaju. Pib - ");
     break;
     case 3:
-    printf("A1 - Aracaju. População - \n");
+    printf("A1 - Aracaju. População - ");
     break;
     case 4:
-    printf("A1 - Aracaju. Turismo - \n");
+    printf("A1 - Aracaju. Turismo - ");
     break;
     case 5:
-    printf("A1 - Aracaju. Densidade Populacional - \n");
+    printf("A1 - Aracaju. Densidade Populacional - ");
     break;
     case 6:
-    printf("A1 - Aracaju. Pib Per Capita - \n");
+    printf("A1 - Aracaju. Pib Per Capita - ");
     break;
     case 7:
-    printf("A1 - ARacaju. Super Poder - \n");
+    printf("A1 - ARacaju. Super Poder - ");
     break;
   default:
   printf("Opção Invalida \n"); 
     break;
   }
 
-    switch (B1Salvador)
+    switch ((Are) || (pib) || (populaca) || (Turism) || (Densidad) || (PibPerCapit) || (SuperPode))
   {
   case 1:
     printf("B1 - Salvador. Area - \n");
@@ -172,12 +170,13 @@ switch (opcao)
     break;
   }
 
-if (Opcao == EscolhaJogador)
+if ((Area == Are) || (Pib == pib) || (populacao == populaca) || (Turismo == Turism) || (Densidade == Densidad) || (PibPerCapita == PibPerCapit) || (SuperPoder == SuperPode))
 {
     printf("***  Jogo Empatou!  *** \n");
-}else if ((EscolhaJogador == 1) && (EscolhaComputador == 3) || 
-           (EscolhaJogador == 2) && (EscolhaComputador == 1)||
-            (EscolhaJogador == 3) && (EscolhaComputador == 2))
+}else if ((Area >= Are) && (Pib >= pib) || 
+           (populacao >= populaca) && (Turismo >= Turism) ||
+            (Densidade < Densidad) && (PibPerCapita >= PibPerCapit) ||
+              (SuperPoder >= SuperPoder))
 {
   printf("***  Você Ganhou!  *** \n");
 }
