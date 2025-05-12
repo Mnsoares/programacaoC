@@ -13,20 +13,8 @@ int main() {
 switch (opcao)
   {
   case 1:
-    printf("\nVamos Começar!\n");
-    break;
-  case 2:
-    printf("As Regras São........\n ");
-    break;
-    case 3:
-    printf("Saindo Do Jogo........\n");
-    break;
-  default:
-  printf("Opção Invalida \n"); 
-    break;
-  }
+    printf("\nJogadores, mostrem suas cartas!\n");
 
-    char nome [20] = "JOGADORES";
     char Carta [20] = "A1";
     char Estado [20] = "Sergipe";
     char Cidade [20] = "Aracaju";
@@ -63,7 +51,7 @@ switch (opcao)
 
 //Cartas da jogadarora coletando os dados das linhas 6 a 11
 //printf coleta valores correspodentes a primeira carta
-    printf("%s, mostrem suas cartas!\n", nome);
+    
     printf("\nANA\n");
     printf("\nCarta: %s\n", Carta);
     printf("Estado: %s\n", Estado);
@@ -99,10 +87,23 @@ switch (opcao)
     printf("PIB Per Capita: %f reais Venceu:%d\n", PibPerCapit, PibPerCapit > PibPerCapita);
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO; 
     printf("Super Poder: %.2f Venceu:%d\n", SuperPode, SuperPode > SuperPoder);
+    break;
+
+  case 2:
+    printf("As Regras São........\n ");
+    break;
+    case 3:
+    printf("Saindo Do Jogo........\n");
+    break;
+  default:
+  printf("Opção Invalida \n"); 
+    break;
+  }
+//PARTE DOIS DO JOGO ONDE OS JOGADORES ESCOLHEM, QUAL A CARACTERISTICA DA CARTA VAI SER DISPUTADA NA RODADA
 
     int Item;
-  
-    
+
+
     printf("\n*** Vamos Escolher Uma Das Características De Cada Carta! ***\n");
     printf("1. Area \n");
     printf("2. Pib \n");
@@ -117,77 +118,77 @@ switch (opcao)
     switch (Item)
   {
   case 1:
-    printf("A1 - Aracaju. Area -> B1 - Salvador. Area \n");
+    printf("\nA1 - Aracaju. Area -> B1 - Salvador. Area \n");
     if (Area > Are){
-    printf("***  Carta A1, Você Ganhou!  *** \n");
+    printf("\n***  Carta A1, Você Ganhou!  *** \n");
 }else if (Area < Are){
- printf("***  Carta B1, Você Ganhou!  *** \n");
+ printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
-    printf("***  Jogo Empatou!  *** \n ");
+    printf("\n***  Jogo Empatou!  *** \n ");
 }
     break;
   case 2:
-    printf("A1 - Aracaju. PIB ->  B1 - Salvador. PIB \n");
+    printf("\nA1 - Aracaju. PIB ->  B1 - Salvador. PIB \n");
     if (Pib > pib){
-    printf("***  Carta A1, Você Ganhou!  *** \n");
+    printf("\n***  Carta A1, Você Ganhou!  *** \n");
 }else if (Pib < pib){
- printf("***  Carta B1, Você Ganhou!  *** \n");
+ printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
-    printf("***  Jogo Empatou!  *** \n ");
+    printf("\n***  Jogo Empatou!  *** \n ");
 }
     break;
     case 3:
-    printf("A1 - Aracaju. População ->  B1 - Salvador. População \n");
+    printf("\nA1 - Aracaju. População ->  B1 - Salvador. População \n");
     if (populacao > populaca){
-    printf("***  Carta A1, Você Ganhou!  *** \n");
+    printf("\n***  Carta A1, Você Ganhou!  *** \n");
 }else if (populacao < populaca){
- printf("***  Carta B1, Você Ganhou!  *** \n");
+ printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
-    printf("***  Jogo Empatou!  *** \n ");
+    printf("\n***  Jogo Empatou!  *** \n ");
 }
     break;
     case 4:
-    printf("A1 - Aracaju. Turismo ->  B1 - Salvador. Turismo \n");
+    printf("\nA1 - Aracaju. Turismo ->  B1 - Salvador. Turismo \n");
     if (Turismo > Turism){
-    printf("***  Carta A1, Você Ganhou!  *** \n");
+    printf("\n***  Carta A1, Você Ganhou!  *** \n");
 }else if (Turismo < Turism){
- printf("***  Carta B1, Você Ganhou!  *** \n");
+ printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
-    printf("***  Jogo Empatou!  *** \n ");
+    printf("\n***  Jogo Empatou!  *** \n ");
 }
     break;
     case 5:
-    printf("A1 - Aracaju. Densidade Populacional ->  B1 - Salvador. Densidade Populacional \n");
+    printf("\nA1 - Aracaju. Densidade Populacional ->  B1 - Salvador. Densidade Populacional \n");
     if (Densidade < Densidad){
-    printf("***  Carta A1, Você Ganhou!  *** \n");
+    printf("\n***  Carta A1, Você Ganhou!  *** \n");
 }else if (Densidade > Densidad){
- printf("***  Carta B1, Você Ganhou!  *** \n");
+ printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
-    printf("***  Jogo Empatou!  *** \n ");
+    printf("\n***  Jogo Empatou!  *** \n ");
 }
     break;
     case 6:
-    printf("A1 - Aracaju. PIB Per Capita -> B1 - Salvador. PIB Per Capita \n");
+    printf("\nA1 - Aracaju. PIB Per Capita -> B1 - Salvador. PIB Per Capita \n");
     if (PibPerCapita > PibPerCapit){
-    printf("***  Carta A1, Você Ganhou!  *** \n");
+    printf("\n***  Carta A1, Você Ganhou!  *** \n");
 }else if (PibPerCapita < PibPerCapit){
- printf("***  Carta B1, Você Ganhou!  *** \n");
+ printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
-    printf("***  Jogo Empatou!  *** \n ");
+    printf("\n***  Jogo Empatou!  *** \n ");
 }
     break;
     case 7:
-    printf("A1 - Aracaju. Super Poder -> B1 - Salvador. Super Poder \n");
+    printf("\nA1 - Aracaju. Super Poder -> B1 - Salvador. Super Poder \n");
     if (SuperPoder > SuperPode){
-    printf("***  Carta A1, Você Ganhou!  *** \n");
+    printf("\n***  Carta A1, Você Ganhou!  *** \n");
 }else if (SuperPoder < SuperPode){
- printf("***  Carta B1, Você Ganhou!  *** \n");
+ printf("\n***  Carta B1, Você Ganhou!  *** \n");
 }else{
-    printf("***  Jogo Empatou!  *** \n ");
+    printf("\n***  Jogo Empatou!  *** \n ");
 }
     break;
   default:
-  printf("Opção Invalida \n"); 
+  printf("\n*** Opção Invalida *** \n"); 
     break;
   }
 
