@@ -2,19 +2,14 @@
 
 int main() {
   int opcao;
-
+//MENU INICIAL DO JOGO, COM AS OPÇÕES DE INICIAR, REGRAS E SAIR;
   printf("*** Super Trunfo ***\n");
   printf("1. Vamos Iniciar O Jogo!\n");
   printf("2. Ver Regras:\n");
   printf("3. Sair.\n");
   printf("Escolha uma opção: \n");
   scanf("%d", &opcao);
-
-switch (opcao)
-  {
-  case 1:
-    printf("\nJogadores, mostrem suas cartas!\n");
-
+// VARIAVEIS DA CARTA A1;
     char Carta [20] = "A1";
     char Estado [20] = "Sergipe";
     char Cidade [20] = "Aracaju";
@@ -24,15 +19,15 @@ switch (opcao)
     int Turismo = 10;
    
  
-//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
+//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA;
     float Densidade = populacao / Area;  
-//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO 
+//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO; 
     float PibPerCapita = Pib / populacao; 
-//SUPER PODER CALCULO DAS AREA
+//SUPER PODER CALCULO DAS AREA;
     float SuperPoder = Area + Pib + populacao + PibPerCapita + Turismo - Densidade;
-//COMPARAÇÃO DAS CARTAS, VENCEU RESULTADO = 1, PERDEU RESULTADO = 0
+//COMPARAÇÃO DAS CARTAS, VENCEU RESULTADO = 1, PERDEU RESULTADO = 0;
         
-
+//VARIAVEIS DA CARTA B1;
     char Cart [20] = "B1";
     char Estad [20] = "Bahia";
     char Cidad [20] = "Salvador";
@@ -41,16 +36,20 @@ switch (opcao)
     int populaca = 2417678.02;
     int Turism = 10;
 
-//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA
+//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA DEBSIDADE POPUPLACIONAL = POPULAÇÃO / AREA;
     float Densidad = populaca / Are;  
-//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO 
+//USO DA VARIAVEL FLOAT, REALIZANDO O CALCULO DA PIB PER CAPITA = PIB / POPULAÇÃO;
     double PibPerCapit = pib/ populaca;  
-//SUPER PODER CALCULO DAS AREA
+//SUPER PODER CALCULO DAS AREA;
     float SuperPode = Are + pib + populaca + PibPerCapit + Turism - Densidad;
-    
 
-//Cartas da jogadarora coletando os dados das linhas 6 a 11
-//printf coleta valores correspodentes a primeira carta
+switch (opcao)
+  {
+  case 1:
+    printf("\nJogadores, mostrem suas cartas!\n");
+
+//Cartas da jogadarora coletando os dados das variaveis;
+//printf coleta valores correspodentes a primeira carta;
     
     printf("\nANA\n");
     printf("\nCarta: %s\n", Carta);
@@ -60,8 +59,6 @@ switch (opcao)
     printf("PIB: %f reais Venceu:%d\n", Pib, Pib > Pib);
     printf("População: %d Venceu:%d\n", populacao, populacao > populaca);
     printf("Turismo: %d Venceu:%d\n", Turismo, Turismo > Turism);
-    
-    
 
 //USANDO OS ESPECIFICADORES DE FORMATO %F PARA IMPRIMIR OS VALORES DE DENSIDADE;
     printf("Densidade Populacional: %f hab/km² Venceu:%d\n", Densidade, Densidade > Densidad);
@@ -70,8 +67,8 @@ switch (opcao)
 //SUPER PODER = SOMA DE POPULAÇÃO, ÁREA, PIB, PIB PER CAPITA E DENSIDADE POPULACIONAL INVERTIDA E PONTOS TURISTICO;    
     printf("Super Poder: %.2f Venceu:%d\n", SuperPoder, SuperPoder > SuperPode);
 
-//Cartas da jogadarora coletando os dados das linhas 21 a 27
-//printf coleta valores correspodentes a segunda carta
+//Cartas da jogadarora coletando os VALORES DE CADA VARIAVEL;
+//printf coleta valores correspodentes a segunda carta;
 
     printf("\nCLARA\n");
     printf("\nCarta: %s\n", Cart);
@@ -90,7 +87,7 @@ switch (opcao)
     break;
 
   case 2:
-    printf("As Regras São........\n ");
+    printf("\nA finalidade do jogo é escolher uma carta que representa um estado e, a partir dessa escolha, comparar os valores correspondentes de cada item mencionado com os da sua cidade (área territorial, população, PIB, PIB per capita, turismo e densidade populacional). Vence a cidade que tiver o valor maior no item escolhido.\n \nEscolha um dos itens abaixo para comparar os valores entre as Cartas A1 e B1 e descubra qual cidade se destaca. Boa sorte!\n");
     break;
     case 3:
     printf("Saindo Do Jogo........\n");
@@ -99,11 +96,11 @@ switch (opcao)
   printf("Opção Invalida \n"); 
     break;
   }
-//PARTE DOIS DO JOGO ONDE OS JOGADORES ESCOLHEM, QUAL A CARACTERISTICA DA CARTA VAI SER DISPUTADA NA RODADA
+//PARTE DOIS DO JOGO ONDE OS JOGADORES ESCOLHEM, QUAL A CARACTERISTICA DA CARTA VAI SER DISPUTADA NA RODADA;
 
     int Item;
 
-
+//MENU PARA ESCOLHER QUAL ITEM VAI SER COMPARADO NO JOGO;
     printf("\n*** Vamos Escolher Uma Das Características De Cada Carta! ***\n");
     printf("1. Area \n");
     printf("2. Pib \n");
@@ -114,7 +111,7 @@ switch (opcao)
     printf("7. Super Poder \n");
     printf("Escolha: \n");  
     scanf("%d", &Item);
-
+//SWITCH COMPARANDO OS VALORES DE CADA CARTA E IMPRIMINDO QUEM FOI O GANHADOR;
     switch (Item)
   {
   case 1:
@@ -191,9 +188,6 @@ switch (opcao)
   printf("\n*** Opção Invalida *** \n"); 
     break;
   }
-
-
-
 
 return 0;
 
