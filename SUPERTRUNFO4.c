@@ -109,7 +109,7 @@ switch (opcao)
     printf("5. Densidade Populacional \n");
     printf("6. Pib Per Capita \n");
     printf("7. Super Poder \n");
-    printf("Escolha: \n");  
+    printf("Escolha Um Número e Clique Enter: \n");  
     scanf("%d", &Item);
 //SWITCH COMPARANDO OS VALORES DE CADA CARTA E IMPRIMINDO QUEM FOI O GANHADOR;
     switch (Item)
