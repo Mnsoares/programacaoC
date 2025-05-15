@@ -2,15 +2,15 @@
 
     int main () {
 
-        int i = 7;
+        int H = 5;
 
         do
         {
-           printf("%d\n", i);
-           i++;
-        } while (i == 5)
-        {
-            printf("Direita.");
+           printf("Direita");
+           
+        } while (H != 5);
+        
+            
         }
 
 
@@ -19,9 +19,4 @@
 
 
 
-        return 0;
-        
-
-
-
-    }
+       

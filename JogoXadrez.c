@@ -9,14 +9,20 @@ int main () {
 
      int a = 0;
 
-    while (a < 1)
+    while (a < 5)
     {
-        printf("\nDiagonal \n         Diagonal \n                  Diagonal \n                           Diagonal \n                                    Diagonal\n");
+        printf("Direita.");
                 
         a++;
     }
 
+ int H = 5;
 
+        do
+        {
+           printf("\nDiagonal \n         Diagonal \n                  Diagonal \n                           Diagonal \n                                    Diagonal\n");
+           
+        } while (H != 5);
     
 return 0;
 
