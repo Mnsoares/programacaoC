@@ -6,15 +6,6 @@ int main () {
     {
        printf("Baixo \n");
     }
-    int i = 0;
-
-    
-    
-    while (i < 5)
-    {
-        printf("Direita .");
-        i++;
-    }
 
      int a = 0;
 

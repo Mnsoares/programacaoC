@@ -2,20 +2,23 @@
 
     int main () {
 
-        int i = 5;
+        int i = 7;
 
         do
         {
            printf("%d\n", i);
            i++;
-        } while (i == 5);
+        } while (i == 5)
+        {
+            printf("Direita.");
+        }
 
 
 
 
 
 
-        
+
         return 0;
         
 
