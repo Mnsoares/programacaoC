@@ -76,33 +76,13 @@ case 'r':
     resultado2 = recuo1 > recuo2 ? 1 : 0;
     break;       
     }
-
 if (PrimeiroAtributo == SegundoAtributo) 
 {
    printf("Você escolheu o mesmo Atributo!");
 }else {
     switch (SegundoAtributo)
-    {
-case 'A': 
-case 'a': 
-    printf("Você escolheu a opção Ataque! \n");
-    resultado2 = ataque1 > ataque2 ? 1 : 0;
-    break;
-case 'D': 
-case 'd': 
-    printf("Você escolheu a opção Defesa! \n");
-    resultado2 = defesa1 > defesa2 ? 1 : 0;
-    break;
-case 'R': 
-case 'r': 
-    printf("Você escolheu a opção Defesa! \n");
-    resultado2 = recuo1 > recuo2 ? 1 : 0;
-    break;       
-    
-    default:
-        break;
-    }
-}
+
+
 
 if (resultado1 && resultado2)
 {
@@ -124,4 +104,4 @@ if (resultado1 && resultado2)
 
 
 
-}
+} }
