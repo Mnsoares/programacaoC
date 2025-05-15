@@ -38,7 +38,7 @@ int numero;
 int Numero, I; 
 printf("Digite um numero para calcular a tabuada: \n");
 scanf("%d", &Numero);
-for (I = 0; I <= 10; I++)
+for (I = 0; I <= 10; I++) 
 {
    printf("%d X %d = %d \n", I, Numero, I * Numero);
 }
