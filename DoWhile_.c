@@ -2,7 +2,7 @@
 
     int main () {
 
-        int i = 2;
+        int i = 5;
 
         do
         {
@@ -10,6 +10,12 @@
            i++;
         } while (i == 5);
 
+
+
+
+
+
+        
         return 0;
         
 

@@ -7,6 +7,8 @@ int main () {
        printf("Baixo \n");
     }
     int i = 0;
+
+    
     
     while (i < 5)
     {
@@ -14,15 +16,16 @@ int main () {
         i++;
     }
 
+     int a = 0;
 
-    do
-
-    printf(">>>>>")
-
+    while (a < 1)
     {
-        /* code */
-    } while (condition);
-    
+        printf("\nDiagonal \n         Diagonal \n                  Diagonal \n                           Diagonal \n                                    Diagonal\n");
+                
+        a++;
+    }
+
+
     
 return 0;
 
