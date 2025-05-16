@@ -11,7 +11,7 @@ void MovimentoRainha(char *nome, int contador) { // poderia utilizar o mesmo cod
 
 int main() {
      char *nome1 = "Baixo\n"; // movimento a ser impresso
-     char *nome2 = "Esquerda"; // movimento a ser impresso
+     char *nome2 = "Esquerda "; // movimento a ser impresso
 
     
     MovimentoRainha(nome1, 5); // Definição de vezes que o numero sera impresso
