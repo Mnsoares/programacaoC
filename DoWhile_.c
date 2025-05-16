@@ -1,22 +1,13 @@
 #include <stdio.h>
 
-    int main () {
+int main() {
+    int contador = 0;
+    char nome[100] = "Diagonal"; // Assume um nome com no máximo 100 caracteres
 
-        int H = 5;
+    do {
+        printf("%s\n", nome); // Imprime o nome
+        contador++; // Incrementa o contador
+    } while (contador < 5); // Condição para parar de imprimir
 
-        do
-        {
-           printf("Direita");
-           
-        } while (H != 5);
-        
-            
-        }
-
-
-
-
-
-
-
-       
+    return 0;
+}
