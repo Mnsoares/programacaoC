@@ -1,13 +1,19 @@
 #include <stdio.h>
 
 int main () {
-    int d = ("Direita. ");
+    int movimentocompleto = 1;
  
-   do
+   while (movimentocompleto--)
    {
-    printf("%d", d);
-    d++;
-   } while (d == 0);
+   for (int i = 0; i < 2; i++)
+   {
+    printf("Cima \n");
+    
+   }
+    printf("Cima ");
+    printf("Direita \n");
+   }
    
+   return 0;
 
 }
